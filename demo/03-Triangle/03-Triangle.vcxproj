@@ -65,7 +65,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>freeglut_static.lib;gltools.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\VisualStudio2008\GLTools\Release;..\..\freeglut-2.6.0\VisualStudio2008Static\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\libs</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -86,7 +86,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>freeglut_static.lib;gltools.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\VisualStudio2008\GLTools\Release;..\..\freeglut-2.6.0\VisualStudio2008Static\Release</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\libs</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
