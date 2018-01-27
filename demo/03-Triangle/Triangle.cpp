@@ -29,8 +29,8 @@ void ChangeSize(int w, int h)
 // This is the first opportunity to do any OpenGL related tasks.
 void SetupRC()
 	{
-	// Blue background
-	glClearColor(0.0f, 0.0f, 1.0f, 1.0f );
+	// Blue background，设置窗口清除的颜色
+	glClearColor(0.75f, 0.75f, 0.75f, 0.75f );
     
 	shaderManager.InitializeStockShaders();
 
@@ -57,6 +57,7 @@ void RenderScene(void)
 	shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);
 	triangleBatch.Draw();
 
+	//先在后台进行渲染，然后在结束时交换到前台
 	// Perform the buffer swap to display back buffer
 	glutSwapBuffers();
 	}

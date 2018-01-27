@@ -91,6 +91,7 @@ void RenderScene(void)
 	// Flush drawing commands
 	glutSwapBuffers();
 
+	//将函数glutPostRedisplay放在RenderScene后面会出现持续刷新
 	BounceFunction();
 	glutPostRedisplay(); // Redraw
 	}

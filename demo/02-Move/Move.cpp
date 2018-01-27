@@ -78,6 +78,9 @@ void SpecialKeys(int key, int x, int y)
 
 	squareBatch.CopyVertexData3f(vVerts);
 
+	//告诉GLUT需要更新窗口
+	//默认情况下窗口创建、改变大小或者需要重绘时GLUT会自动调用RenderScene函数重绘
+	//glutPostRedisplay函数是人工告诉GLUT需要重绘的方式
 	glutPostRedisplay();
 	}
 
