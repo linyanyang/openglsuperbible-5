@@ -19,6 +19,7 @@ GLShaderManager	shaderManager;
 // to use the window dimensions to set the viewport and the projection matrix.
 void ChangeSize(int w, int h)
     {
+		//x,y参数表示窗口中视口左下角坐标，而宽度和高度是使用像素作为单位
 	glViewport(0, 0, w, h);
     }
 
@@ -80,6 +81,7 @@ int main(int argc, char* argv[])
 		return 1;
 		}
 	
+	//RC代表渲染环境(rendering context)
 	SetupRC();
 
 	glutMainLoop();
