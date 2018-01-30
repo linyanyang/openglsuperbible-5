@@ -40,7 +40,8 @@ void ProcessMenu(int value)
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
             glEnable(GL_BLEND);
             glEnable(GL_POINT_SMOOTH);
-            glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);
+			//GL_FASTEST是速度最快算法，GL_NICEST是效果最佳算法
+            glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);//有许多算法可以实现抗锯齿处理的图元，这个函数为某一种功能选择算法
             glEnable(GL_LINE_SMOOTH);
             glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
             glEnable(GL_POLYGON_SMOOTH);
